@@ -22,5 +22,12 @@ $(document).ready(function(){
 
         var newOrder=new Order(selectsize, selectcrust, selecttopping, inputquan);
 
-    })
-})
+        $("#confirm>p").append("<p>"+newOrder.total()+"<p>");
+
+        $("#size").val();
+        $("#crust").val();
+        $("#topping").val();
+        $("#quan").val();
+
+    });
+});
