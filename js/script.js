@@ -1,12 +1,12 @@
 //Business logic
-function order(size, crust, topping) {
+function Order(size, crust, topping) {
     this.size=size;
     this.crust=crust;
     this.topping=topping;
     this.quantity=quantity;
 }
 
-order.prototype.total=function(){
+Order.prototype.total=function(){
     return (this.size + this.crust + this.topping)*this.quantity;
 }
 
@@ -19,6 +19,8 @@ $(document).ready(function(){
         var selectcrust=$("#crust").val();
         var selecttopping=$("#topping").val();
         var inputquan=$("#quan").val();
+
+        var newOrder=new Order(selectsize, selectcrust, selecttopping, inputquan);
 
     })
 })
