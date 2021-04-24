@@ -4,10 +4,16 @@ function Order(size, crust, topping) {
     this.crust=crust;
     this.topping=topping;
     this.quantity=quantity;
+    this.total;
 }
 
 Order.prototype.total=function(){
-    return (this.size + this.crust + this.topping)*this.quantity;
+    var sizes=size;
+    var crusts=crust;
+    var toppings=topping;
+    var quantities=quantity;
+    var total= (sizes + crusts + toppings) * quantities;
+    this.total="Your order is" + total;
 }
 
 //user interface
@@ -18,16 +24,16 @@ $(document).ready(function(){
         var selectsize = $("#size").val();
         var selectcrust=$("#crust").val();
         var selecttopping=$("#topping").val();
-        var inputquan=$("#quan").val();
+        var inputquantity=$("#quantity").val();
 
-        var newOrder=new Order(selectsize, selectcrust, selecttopping, inputquan);
+        var newOrder=new Order(selectsize, selectcrust, selecttopping, inputquantity);
 
         $("#confirm>p").append("<p>"+newOrder.total()+"<p>");
 
         $("#size").val();
         $("#crust").val();
         $("#topping").val();
-        $("#quan").val();
+        $("#quantity").val();
 
     });
 });
