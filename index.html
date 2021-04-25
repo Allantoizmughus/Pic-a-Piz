@@ -33,7 +33,7 @@
                 <div class="row">
                     <div class="col-sm-3">
                         <label for="size">Size</label>
-                                <select class="browser-default custom-select" id="size" placeholder="Choose Size">
+                                <select class="browser-default custom-select" id="sizes" placeholder="Choose Size">
                                     <option value="">Choose Size</option>
                                     <option value="400">Small =Ksh400</option>
                                     <option value="800">Medium =ksh 800</option>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-sm-3">
                         <label for="crust">Crust</label>
-                                <select class="browser-default custom-select" id="crust" placeholder="Choose Crust" >
+                                <select class="browser-default custom-select" id="crusts" placeholder="Choose Crust" >
                                     <option value="">Choose Crust</option>
                                     <option value="150">Crispy =ksh 150</option>
                                     <option value="200">Stuffed =ksh 200</option>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="col-sm-3">
                         <label for="size">Topping</label>
-                                <select class="browser-default custom-select" id="topping" placeholder="Choose Topping" >
+                                <select class="browser-default custom-select" id="toppings" placeholder="Choose Topping" >
                                     <option value="">Choose Topping</option>
                                     <option value="50">Cheese =ksh 50</option>
                                     <option value="70">Veggies =ksh 70</option>
@@ -68,11 +68,22 @@
                 </div>
             </form>
             
-            <h2>Your Order is</h2>
+            
             <div id="confirm">
-                <ul>
+                <h2>Your Order is</h2>
+                <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
 
-                </ul>
+                <div id="deliver" class="deliver">
+                    <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
+                    <form id="address-form">
+                        <div class="col-xs-6">
+                            <label for="first-name"></label>
+                            <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
+                            <button class="btn btn-dark complete" type="submit">Enter</button>
+                            <h3><span id="delivery-option"></span></h3>
+                        </div>
+                    </form>
+                
             </div>
 
         </div>
