@@ -7,33 +7,53 @@ function Order(size, crust, topping) {
     this.total;
 }
 
-Order.prototype.total=function(){
-    var sizes=size;
-    var crusts=crust;
-    var toppings=topping;
-    var quantities=quantity;
-    var total= (sizes + crusts + toppings) * quantities;
-    this.total="Your order is" + total;
-}
+
+
+// Order.prototype.total=function(){
+//     var sizes=this.size;
+//     var crusts=this.crust;
+//     var toppings=this.topping;
+//     var quantities=this.quantity;
+//     var total= (sizes + crusts + toppings) * quantities;
+//     this.total="Your order is" + total;
+// }
 
 //user interface
 $(document).ready(function(){
     $("form#pizza").submit(function(event){
         event.preventDefault();
 
-        var selectsize = $("#size").val();
-        var selectcrust=$("#crust").val();
-        var selecttopping=$("#topping").val();
-        var inputquantity=$("#quantity").val();
+        var newOrder=new Order();
+        $("button#checkout").click(function(){
+            
+        })
+     
+})
 
-        var newOrder=new Order(selectsize, selectcrust, selecttopping, inputquantity);
+//user interface
+// $(document).ready(function(){
+//     $("form#pizza").submit(function(event){
+//         event.preventDefault();
 
-        $("#confirm>p").append("<p>"+newOrder.total()+"<p>");
+//         var selectSize = parseInt($("#size").val());
+//         var selectCrust=parseInt($("#crust").val());
+//         var selectTopping=parseInt($("#topping").val());
+//         var inputQuantity=parseInt($("#quantity").val());
 
-        $("#size").val();
-        $("#crust").val();
-        $("#topping").val();
-        $("#quantity").val();
+//         var newOrder=new Order(selectSize, selectCrust, selectTopping, inputQuantity);
 
-    });
-});
+//         $("#confirm ul").append("<li>"+newOrder.total()+"<li>");
+
+//         $("#checkout").click(function(){
+//             $("#confirm").text(order.total);
+//         });
+
+//         //Order.total();
+
+//         // $("#size").val("");
+//         // $("#crust").val("");
+//         // $("#topping").val("");
+//         // $("#quantity").val("");
+
+//     });
+// });
