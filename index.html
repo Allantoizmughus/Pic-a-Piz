@@ -22,13 +22,6 @@
     <!--end landing page-->
     
     <!--content-->
-    <div id="order">
-        <div id="images">
-            <div><img src=""></div>
-            <div><img src=""></div>
-            <div><img src=""></div>
-        </div>
-
         <div id="form">
             <form id="pizza">
                 <div class="row">
@@ -43,29 +36,29 @@
                     </div>
                     <div class="col-sm-3">
                         <label for="crust"></label>
-                                <select class="browser-default custom-select" id="crusts" placeholder="Choose Crust" >
+                                <select class="browser-default custom-select" id="crusts" placeholder="Choose Crust">
                                     <option value="">Choose Crust</option>
                                     <option value="150">Crispy =ksh 150</option>
                                     <option value="200">Stuffed =ksh 200</option>
                                     <option value="100">Gluten-free= ksh 100</option>
-                                </select><br>
+                                </select>
                     </div>
                     <div class="col-sm-3">
                         <label for="size"></label>
-                                <select class="browser-default custom-select" id="toppings" placeholder="Choose Topping" >
+                                <select class="browser-default custom-select" id="toppings" placeholder="Choose Topping">
                                     <option value="">Choose Topping</option>
                                     <option value="50">Cheese =ksh 50</option>
                                     <option value="70">Veggies =ksh 70</option>
                                     <option value="60">Pepperoni= ksh 60</option>
                                 </select>
-                    </div><br>
+                    </div>
                     <div class="quan">
                         <label for="quantity">Quantity</label>
                         <input class="form-control" type="text" name="pizza" id="quantity" placeholder="0" max=""
                             min="0">
                     </div><br><br><br><br><br><br>
 
-                    <button class="btn btn-success mx-auto d-block submit" type="submit" id="orderhere"><strong>ORDER HERE</strong></button>
+                    <div class="orderhere"><button class="btn btn-success mx-auto d-block submit" type="submit" id="orderhere"><strong>ORDER HERE</strong></button></div>
                 </div>
             </form>
             
@@ -77,7 +70,7 @@
                </div>
 
                 <div id="deliver" class="deliver">
-                    <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
+                    <h5>Would you like us to deliver your pizza at a Ksh.150 fee?</h5><br>
                     <form id="address">
                         <div class="col-xs-6">
                             <label for="first-name"></label>
@@ -88,10 +81,10 @@
                     </form>
                 
             </div><br>
-            <button type="btn" class="btn btn-dark" id="checkout">Checkout</button><br><br>
+            <div class="checkout"><button type="btn" class="btn btn-dark" id="checkout">Checkout</button></div><br><br>
             <div id="orderdetails" class="col-xs-12">
                 <ul id="summary"><strong>Your order is: </strong></ul>
-                <h5 id="thanks">Thank you and Welcome again!</h5>
+                <h4 id="thanks">Thank you and Welcome again!</h4>
             </div>
 
 
