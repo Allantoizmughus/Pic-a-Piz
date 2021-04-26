@@ -1,9 +1,20 @@
+@media only screen and (max-width: 780px){
+    body{
+        display: block;
+    }
+    [class*="col-"] {
+        width: 100%;
+      }
+    
+}
+
 body{
     background-image: url("/images/pizza.jpg");
     background-size: 100% 100%;
     width: 100%;
     height: auto;
     opacity: 0.9;
+    font-style: italic;
 }
 #overlay{
        background-color: rgba(0, 0, 0, 0.3); 
@@ -25,6 +36,7 @@ body{
 nav{
     display: flex;
     flex-direction: row;
+    font-weight: bold;
 }
 #home{
     margin: 15px;
@@ -100,7 +112,21 @@ nav{
 #orderdetails{
     text-align: center;
     color: lawngreen;
+    display: none;
 }
 ul{
     font-size: 23px;
+}
+#contacts{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: blue;
+}
+
+#delivery-message{
+    color: yellow;
+}
+#summary>li{
+    color: violet;
 }

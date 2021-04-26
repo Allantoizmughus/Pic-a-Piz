@@ -3,35 +3,40 @@ $(document).ready(function() {
     $("#deliver").hide();
     // Business Logic
     var totalPriceArray = [];
-    function Order(size, crust, toppings, quantity) {
+    var n= quantity;
+
+    function Order(size, crust, topping, quantity) {
       this.sizes = size;
       this.crusts = crust;
-      this.toppings = toppings;
+      this.toppings = topping;
       this.pizzaPrice = 0;
       this.quantity = quantity;
     }
     Order.prototype.total = function() {
-      if (this.sizes === "400") {
+      if (this.sizes === "Small") {
         this.pizzaPrice += 400;
-      } else if (this.sizes === "800") {
+      } else if (this.sizes === "Medium") {
         this.pizzaPrice += 800;
-      } else if (this.sizes === "1200") {
+      } else if (this.sizes === "Large") {
         this.pizzaPrice += 1200;
       }
-      if (this.crusts === "150") {
+      if (this.crusts === "Crispy") {
         this.pizzaPrice += 150;
-      } else if (this.crusts === "200") {
+      } else if (this.crusts === "Stuffed") {
         this.pizzaPrice += 200;
-      } else if (this.crusts === "100") {
+      } else if (this.crusts === "Gluten-free") {
         this.pizzaPrice += 100;
       } 
-      if (this.toppings === "50") {
+      if (this.toppings === "Cheese") {
         this.pizzaPrice += 50;
-      } else if (this.toppings === "70") {
+      } else if (this.toppings === "Veggies") {
         this.pizzaPrice += 70;
-      } else if (this.toppings === "60") {
+      } else if (this.toppings === "Pepperoni") {
         this.pizzaPrice += 60;
       } 
+      if(this.quantity>"0"){
+        this.pizzaPrice *quantity
+      }
     };
     //Business logic
     function Address(address) {
@@ -54,6 +59,8 @@ $(document).ready(function() {
       var size = $("select#sizes").val();
       var crust = $("select#crusts").val();
       var toppings = $("select#toppings").val();
+      //var quantity=$("#quantity").val();
+
       var pizzaDetails = (size + " - " + crust + " - " + toppings);
       var newOrder = new Order(size, crust, toppings);
       newOrder.total();
