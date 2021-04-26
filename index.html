@@ -64,30 +64,37 @@
                             min="0">
                     </div><br><br><br><br><br><br>
 
-                    <button class="btn btn-success mx-auto d-block submit" type="submit" id="checkout"><strong>Checkout</strong></button>
+                    <button class="btn btn-success mx-auto d-block submit" type="submit" id="orderhere"><strong>ORDER HERE</strong></button>
                 </div>
             </form>
             
             
-            <div id="confirm">
+            <div class="col-xs-4" id="confirm">
                 <h2>Your Order is</h2>
-                <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
+                <h2>Price: Ksh <span id="finalcost"></span></h2><br><br>
 
                 <div id="deliver" class="deliver">
                     <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
-                    <form id="address-form">
+                    <form id="address">
                         <div class="col-xs-6">
                             <label for="first-name"></label>
                             <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
                             <button class="btn btn-dark complete" type="submit">Enter</button>
-                            <h3><span id="delivery-option"></span></h3>
+                            <h3><span id="delivery-message"></span></h3>
                         </div>
                     </form>
                 
+            </div><br>
+            <button type="btn" class="btn btn-dark" id="checkout">Checkout</button><br><br>
+            <div id="orderdetails" class="col-xs-12">
+                <ul id="summary"><strong>Your order is: </strong></ul>
+                <h5 id="thanks">Thank you and Welcome again!</h5>
             </div>
+
 
         </div>
 
+        
     </div>
 </body>
 </html>
