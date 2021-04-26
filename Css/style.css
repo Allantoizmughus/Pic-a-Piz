@@ -22,6 +22,23 @@ body{
     font-weight: bolder;
     color: yellow;
 }
+nav{
+    display: flex;
+    flex-direction: row;
+}
+#home{
+    margin: 15px;
+    font-size: x-large;
+
+}
+#norder{
+    margin: 15px;
+    font-size: x-large;
+}
+#contact{
+    margin: 15px;
+    font-size: x-large;
+}
 
 #sizes{
    margin-left: 130px;
