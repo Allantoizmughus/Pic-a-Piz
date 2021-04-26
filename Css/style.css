@@ -1,4 +1,63 @@
 body{
     background-image: url("/images/pizza.jpg");
     background-size: 100% 100%;
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+#overlay{
+        
+}    
+#landing{
+    text-align: center;
+}
+#landing>h1{
+    font-style: italic;
+    color: rgb(36, 243, 36);
+    font-weight: bold;
+}
+#landing>p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    color: yellow;
+}
+
+#sizes{
+   margin-left: 130px;
+}
+#crusts{
+    margin-left: 230px;
+}
+#toppings{
+    margin-left: 330px;
+}
+
+.quan{
+    width: 200px;
+    margin-left: 550px;
+    margin-top: 40px;
+}
+.quan>label{
+    color: lawngreen;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#orderhere{
+    width: 300px;
+    height: 40px;
+    margin-top: 150px;
+    
+}
+
+.confirm{
+    background-color: white;
+    height: 80px;
+    margin-left: 10px;
+}
+.deliver{
+    color: lawngreen;
+    font-size: 18px;
+    margin-left: 10px;
 }

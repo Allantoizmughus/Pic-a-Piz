@@ -12,9 +12,10 @@
 </head>
 <body>
     <!--landing page-->
+    <div id="overlay">
     <div id=landing>
         <h1>PIC-A-PIS</h1>
-        <div><img src="images/pizza.png" alt="logo" width="150px" height="150px"></div>
+        <div><img src="images/pizza.png" alt="logo" width="100px" height="100px"></div>
         <p>Pick A Piece Of Pizza!</p>
 
     </div>
@@ -32,7 +33,7 @@
             <form id="pizza">
                 <div class="row">
                     <div class="col-sm-3">
-                        <label for="size">Size</label>
+                        <label for="size"></label>
                                 <select class="browser-default custom-select" id="sizes" placeholder="Choose Size">
                                     <option value="">Choose Size</option>
                                     <option value="400">Small =Ksh400</option>
@@ -41,7 +42,7 @@
                                 </select>
                     </div>
                     <div class="col-sm-3">
-                        <label for="crust">Crust</label>
+                        <label for="crust"></label>
                                 <select class="browser-default custom-select" id="crusts" placeholder="Choose Crust" >
                                     <option value="">Choose Crust</option>
                                     <option value="150">Crispy =ksh 150</option>
@@ -50,15 +51,15 @@
                                 </select><br>
                     </div>
                     <div class="col-sm-3">
-                        <label for="size">Topping</label>
+                        <label for="size"></label>
                                 <select class="browser-default custom-select" id="toppings" placeholder="Choose Topping" >
                                     <option value="">Choose Topping</option>
                                     <option value="50">Cheese =ksh 50</option>
                                     <option value="70">Veggies =ksh 70</option>
                                     <option value="60">Pepperoni= ksh 60</option>
                                 </select>
-                    </div>
-                    <div class="col-md-3">
+                    </div><br>
+                    <div class="quan">
                         <label for="quantity">Quantity</label>
                         <input class="form-control" type="text" name="pizza" id="quantity" placeholder="0" max=""
                             min="0">
@@ -70,8 +71,10 @@
             
             
             <div class="col-xs-4" id="confirm">
-                <h2>Your Order is</h2>
+               <div class="confirm"> 
+                <h2>Your Pizza  Bills are </h2>
                 <h2>Price: Ksh <span id="finalcost"></span></h2><br><br>
+               </div>
 
                 <div id="deliver" class="deliver">
                     <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
@@ -96,5 +99,6 @@
 
         
     </div>
+</div>
 </body>
 </html>
