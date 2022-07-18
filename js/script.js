@@ -56,7 +56,7 @@ $(document).ready(function() {
     //Userinterface Logic
     $("form#pizza").submit(function(event) {
       event.preventDefault();
-      var size = $("select#sizes").val();
+      var size = $("select#sizes").val(); 
       var crust = $("select#crusts").val();
       var toppings = $("select#toppings").val();
       //var quantity=$("#quantity").val();
