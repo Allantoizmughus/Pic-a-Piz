@@ -274,7 +274,37 @@ body{
     top: 0;
 
 }
-
+#landing4{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#landing4>#img4{
+    width: 1500px;
+    height: 550px;
+}
+#landing4>#deliveryLogo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 20px;
+}
+#landing4>#orderFoot{
+    position: absolute;
+    color: #ffe203;
+    left: 10px;
+    bottom: 0;
+}
+#landing4>#orderFoot>h2>span>img{
+    width: 50px;
+    height: 50px;
+}
+#landing4>#orderFoot>h2{
+    font-family: millenia;
+    font-size: 50px;
+}
 
 /* /////////////////////////////////////////////////////////////// */
 

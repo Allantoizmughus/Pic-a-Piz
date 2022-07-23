@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 
     // slides logic start
-    var counter=0;
+    var counter=1;
 
     setInterval(function(){
       // make slide go to the next iamge
