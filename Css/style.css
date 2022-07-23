@@ -7,6 +7,10 @@
     font-family: sweet;
     src: url(/fonts/SweetHipster-PzlE.ttf);
 }
+@font-face {
+    font-family: Rosmatica;
+    src: url(/fonts/RosmatikaRegular-BWA45.ttf);
+}
 
 
 @media only screen and (max-width: 780px){
@@ -136,7 +140,7 @@ body{
     padding-left: 20px;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 100px;
 }
 #landing1>h1{
     text-align: center;
@@ -192,11 +196,13 @@ body{
 }
 #landing2>h1{
     position: absolute;
-    color: #ffe203;
-    font-size: 60px;
+    color: red;
+    /* color: #f83426; */
+    font-size: 70px;
+    font-family: Rosmatica;
 }
 #landing2>h1>span{
-    color: #f83426;
+    color: #ffe203;
     font-weight: 900;
 }
 #landing2>#img2{
