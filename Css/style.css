@@ -1,3 +1,14 @@
+/* fonts */
+@font-face {
+    font-family: millenia;
+    src: url(/fonts/GoldenBrickPersonalUseRegular-eZyr6.ttf);
+}
+@font-face {
+    font-family: sweet;
+    src: url(/fonts/SweetHipster-PzlE.ttf);
+}
+
+
 @media only screen and (max-width: 780px){
     body{
         display: block;
@@ -120,30 +131,91 @@ body{
 
 /* style the individual sliding elements ///////////////////////*/
 #landing1{
+    position: relative;
     display: flex;
-    padding-left: 10px;
+    padding-left: 20px;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
 #landing1>h1{
     text-align: center;
-    font-size: 70px;
+    font-size: 100px;
+    font-family: sweet;
     color: white;
     font-weight: bold;
+    gap: -5px;
 }
-#landing1>h1>span{
-    color: #ffe203;
+#landing1>h1>span>img{
+   width: 300px;
+   height: 100px;
 }
 #landing1>img{
     width: 400px;
     height: 500px;
 }
 #landing1>#qualityLogo{
+    position: absolute;
     width: 100px;
     height: 100px;
-    margin-top: -320px;
-    margin-right: 20px;
+    top: 0;
+    right: 20px;
+  
+}
+#landing1>#deliveryLogo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 20px;
+}
+#landing1>#orderFoot{
+    position: absolute;
+    color: #ffe203;
+    left: 10px;
+    bottom: 0;
+}
+#landing1>#orderFoot>h2>span>img{
+    width: 50px;
+    height: 50px;
+}
+#landing1>#orderFoot>h2{
+    font-family: millenia;
+    font-size: 50px;
+}
+
+#landing2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#landing2>h1{
+    position: absolute;
+    color: #ffe203;
+    font-size: 60px;
+}
+#landing2>h1>span{
+    color: #f83426;
+    font-weight: 900;
+}
+#landing2>#img2{
+    width: 1500px;
+    height: 550px;
+}
+#landing2>#bestLogo2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    bottom: 0;
+}
+#landing2>#qualityLogo2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 10px;
+    top: 0;
 }
 
 /* /////////////////////////////////////////////////////////////// */
