@@ -421,6 +421,42 @@ nav>div>a:hover{
     color: crimson;
     font-family: Golden;
 }
+/* ///////////////////////////////// */
+
+/* Menu Display */
+#menuDisplay{
+    margin-bottom: 80px;
+}
+.pizza{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pizza>img{
+    width: 230px;
+    height: 230px;
+}
+.pizza>button{
+    border-style: none;
+    background-color: crimson;
+    border-radius: 5px;
+    color: #ffe203;
+    height: 40px;
+}
+.pizza>button:hover{
+    transform: scale(1.05);
+    color: white;
+    border: 1px solid #ffe203;
+}
+.row{
+    margin-bottom: 40px;
+}
+.pizza>h3{
+    color: goldenrod;
+}
+/* ////////////// */
+
 
 #sizes{
    margin-left: 130px;
