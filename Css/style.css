@@ -1,6 +1,6 @@
 /* fonts */
 @font-face {
-    font-family: millenia;
+    font-family: Golden;
     src: url(/fonts/GoldenBrickPersonalUseRegular-eZyr6.ttf);
 }
 @font-face {
@@ -10,6 +10,18 @@
 @font-face {
     font-family: Rosmatica;
     src: url(/fonts/RosmatikaRegular-BWA45.ttf);
+}
+@font-face {
+    font-family: christmas;
+    src: url(/fonts/Christmasrevuepersonaluse-PKL6r.otf);
+}
+@font-face {
+    font-family: Air;
+    src: url(/fonts/AirtravelerspersonaluseBdit-ow59x.otf);
+}
+@font-face {
+    font-family: Handy;
+    src: url(/fonts/HandyQuomteRegular-6YLLo.ttf);
 }
 
 
@@ -184,7 +196,7 @@ body{
     height: 50px;
 }
 #landing1>#orderFoot>h2{
-    font-family: millenia;
+    font-family: Golden;
     font-size: 50px;
 }
 
@@ -241,7 +253,7 @@ body{
 }
 #landing3>#img3{
     width: 600px;
-    height: 600px;
+    height: 500px;
     
 }
 #landing3>#discount{
@@ -308,9 +320,6 @@ body{
 
 /* /////////////////////////////////////////////////////////////// */
 
-#overlay{
-       background-color: rgba(0, 0, 0, 0.3); 
-}    
 #header{
     display: flex;
     flex-direction: row;
@@ -359,6 +368,58 @@ nav>div>a{
 }
 nav>div>a:hover{
     color: yellow;
+}
+
+/* ABOUT PAGE ////////////////////////////////////////////////////////////////////////////////// */
+#about{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+#twoPics{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+#twoPics>#crop1{
+    width: 250px;
+    height: 400px;
+}
+#twoPics>#crop2{
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    left: 280px;
+    bottom: 20px;
+}
+#aboutDetails{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 320px;
+}
+#aboutDetails>p{
+    text-align: center;
+    font-family: Handy;
+    font-size: 24px;
+}
+#aboutDetails>h2{
+    color: crimson;
+    font-family: Air;
+}
+#aboutDetails>h3{
+    color: #ffe203;
+    font-family: Golden;
+    font-size: 40px;
+
+}
+#aboutDetails>h4{
+    color: crimson;
+    font-family: Golden;
 }
 
 #sizes{
