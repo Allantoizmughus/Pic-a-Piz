@@ -314,7 +314,7 @@ body{
     height: 50px;
 }
 #landing4>#orderFoot>h2{
-    font-family: millenia;
+    font-family: Golden;
     font-size: 50px;
 }
 
@@ -439,7 +439,7 @@ nav>div>a:hover{
 }
 .pizza>button{
     border-style: none;
-    background-color: crimson;
+    background-color: brown;
     border-radius: 5px;
     color: #ffe203;
     height: 40px;
@@ -458,30 +458,54 @@ nav>div>a:hover{
 /* ////////////// */
 
 
-#sizes{
-   margin-left: 130px;
-   background-color: chartreuse;
+/* FORM */
+#form{
+    width: 700px;
+    height: 500px;
+    border-radius: 15px;
+    margin-left: 200px;
+    background-color: brown;
+    background-image: url(/images/food\ bg1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#crusts{
-    margin-left: 230px;
-    background-color: chartreuse;
+form{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
 }
-#toppings{
-    margin-left: 330px;
-    background-color: chartreuse;
+.choice{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
-
-.quan{
-    width: 200px;
-    margin-left: 550px;
-    margin-top: 40px;
+label{
+    color: #ffe203;
+    font-size: 20px;
 }
-.quan>label{
-    color: lawngreen;
-    font-size: 25px;
-    font-weight: bolder;
+#orderHere{
+    width: 160px;
+    height: 40px;
+    background-color: #fca424;
+    margin-left: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
-
+#orderHere:hover{
+    transform: scale(1.05);
+    color: aliceblue;
+}
+#form>h1{
+    color: white;
+    font-family: Air;
+}
 /*orderhere{
     width: 300px;
     height: 40px;
@@ -489,50 +513,10 @@ nav>div>a:hover{
     
 }*/
 
-.confirm{
-    background-color: white;
-    height: 80px;
-    margin-left: 10px;
-}
-.deliver{
-    color: lawngreen;
-    font-size: 18px;
-    margin-left: 300px;
-}
-.deliver>h5{
-    margin-bottom: -20px;
-    margin-top: 15px;
+.col-xs-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.checkout{
-  text-align: center;
-}
-#checkout{
-    background-color: yellow;
-    color: black;
-    border-radius: 10px;
-}
-#checkout:hover{
-    background-color: yellowgreen;
-}
-#orderdetails{
-    text-align: center;
-    color: lawngreen;
-    display: none;
-}
-ul{
-    font-size: 23px;
-}
-#contacts{
-    font-size: 50px;
-    font-weight: bold;
-    margin-left: 10px;
-    color: blue;
-}
-
-#delivery-message{
-    color: yellow;
-}
-#summary>li{
-    color: violet;
-}

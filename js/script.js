@@ -88,7 +88,7 @@ $(document).ready(function() {
       $("#summary").append("<ul><li>" + pizzaDetails + "</li></ul>");
       // $("#size, #crust, #toppings,").val("");
     });
-    $("#orderhere").click(function() {
+    $("#orderHere").click(function() {
       $("#deliver").toggle();
     });
   
