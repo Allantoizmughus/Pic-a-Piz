@@ -225,36 +225,33 @@
 
         </div>
             
-            
-            <div class="col-xs-4" id="confirm">
+            <div id="confirm">
+            <div class="col-xs-4">
                <div class="confirm"> 
                 <h2>Your Pizza  Bills are </h2>
-                <h2>Price: Ksh <span id="finalcost"></span></h2><br><br>
+                <ul id="summary"><strong></strong></ul>
+                <h3>Price: Ksh <span id="finalcost"></span></h3><br><br>
                </div>
 
                 <div id="deliver" class="deliver">
-                    <h5>Would you like us to deliver your pizza at a Ksh.150 fee?</h5><br>
+                    <h5>Would you like us to deliver your pizza at a <span>Ksh.150</span> fee?</h5><br>
                     <form id="address">
                         <div class="col-xs-6">
-                            <label for="first-name"></label>
                             <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
-                            <button class="btn btn-dark complete" type="submit">Enter</button>
+                            <button class="btn" type="submit">Enter</button>
                             <h3><span id="delivery-message"></span></h3>
                         </div>
                     </form>
                 
             </div><br>
-            <div class="checkout"><button type="btn" class="btn btn-dark" id="checkout">Checkout</button></div><br><br>
 
-            <div id="orderdetails" class="col-xs-12">
-                <ul id="summary"><strong>Your order is: </strong></ul>
+            <div id="orderDetails" class="col-xs-12"> 
                 <h4 id="thanks">Thank you and Welcome again!</h4>
             </div>
             
-            <!-- <div id=contacts><img src="images/telephone (1).png" height="80px" width="80px">: +254 722111000 </div> -->
-
 
         </div>
+    </div>
 
     
 </div>

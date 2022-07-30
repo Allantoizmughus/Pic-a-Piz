@@ -79,7 +79,7 @@ $(document).ready(function() {
       var toppings = $("select#toppings").val();
       //var quantity=$("#quantity").val();
 
-      var pizzaDetails = (size + " - " + crust + " - " + toppings);
+      var pizzaDetails = (size + " , " + crust + " , " + toppings);
       var newOrder = new Order(size, crust, toppings);
       newOrder.total();
       totalPriceArray.push(newOrder.pizzaPrice);
@@ -89,17 +89,16 @@ $(document).ready(function() {
       // $("#size, #crust, #toppings,").val("");
     });
     $("#orderHere").click(function() {
+      $("#confirm").toggle();
       $("#deliver").toggle();
     });
   
-    $("#checkout").click(function() {
-      $("#orderdetails").toggle();
-    });
     $("form#address").submit(function(event) {
       $(".address-form").toggle();
       event.preventDefault();
       var address = $("input#location").val();
       var newAddress = new Address(address);
       $("#delivery-message").text("Your pizza will be delivered to: " + newAddress.deliveryAddress);
+      $("#orderDetails").toggle();
     });
   });
