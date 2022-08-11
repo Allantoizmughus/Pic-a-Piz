@@ -560,4 +560,78 @@ label{
     color: #fca424;
 }
 
+/* FOOTER //////////////////////////////////////////////// */
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: black;
+}
+#socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+#socials>#glovo>a>img{
+    width: 40px;
+    height: 45px;
+}
+#socials>#glovo{
+    height: 50px;
+    width: 50px;
+    border: 2px solid brown;
+    border-radius: 8px;
+    text-align: center;
+}
+#socials>#uber>a>img{
+    width: 40px;
+    height: 45px;
+}
+#socials>#uber{
+    height: 50px;
+    width: 50px;
+    border: 2px solid brown;
+    border-radius: 8px;
+    text-align: center;
+}
+#socials>.icon>a>i{
+    font-size: 50px;
+    color: brown;
+}
+#socials>.icon>a>i:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#socials>.icon>a>img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
 
+#contact{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+#contact>p{
+    color: gainsboro;
+}
+#contact>p>span{
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #ffe203;
+}
+
+#credits{
+    text-align: center;
+    color: grey;
+}
+#footer>h1{
+    color: white;
+    font-family: handy;
+
+}
