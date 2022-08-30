@@ -48,7 +48,7 @@ body{
     padding: 0;
     height: 100vh;
     background-color: brown;
-    background-image: url(/images/food\ bg1.png);
+    background-image: url(./images/food\ bg1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -465,7 +465,7 @@ nav>div>a:hover{
     border-radius: 15px;
     margin-left: 200px;
     background-color: brown;
-    background-image: url(/images/food\ bg1.png);
+    background-image: url(./images/food\ bg1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
